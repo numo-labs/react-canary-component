@@ -1,7 +1,7 @@
 module.exports = {
   entry: {
-    javascript: './src/app.js',
-    html: './src/index.html'
+    javascript: './app.js',
+    html: './index.html'
   },
 
   output: {

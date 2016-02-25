@@ -27,9 +27,8 @@
   "scripts": {
     "build": "webpack --progress",
     "dev": "webpack-dev-server --hot --inline",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "semistandard",
-    "test": "npm run lint && mocha test/**/*.test.js --compilers js:babel-register"
+    "test": "npm run lint && mocha index.test.js --compilers js:babel-register"
   },
   "repository": {
     "type": "git",
