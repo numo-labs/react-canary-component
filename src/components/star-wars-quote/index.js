@@ -2,10 +2,15 @@ import React from 'react';
 import starwars from 'starwars';
 
 const StarwarsQuote = React.createClass({
-  render: function () {
+
+  propTypes: {
+    quote: React.PropTypes.string
+  },
+
+  render () {
     return (
       <div>
-        "{this.props.quote || starwars()} "
+        {this.props.quote || starwars()}
       </div>
     );
   }

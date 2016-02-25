@@ -28,7 +28,8 @@
     "build": "webpack --progress",
     "dev": "webpack-dev-server --hot --inline",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "semistandard"
+    "lint": "semistandard",
+    "test": "npm run lint && mocha test/**/*.test.js --compilers js:babel-register"
   },
   "repository": {
     "type": "git",
@@ -39,5 +40,11 @@
   "bugs": {
     "url": "https://github.com/numo-labs/react-canary-component/issues"
   },
-  "homepage": "https://github.com/numo-labs/react-canary-component#readme"
+  "homepage": "https://github.com/numo-labs/react-canary-component#readme",
+  "semistandard": {
+    "globals": [
+      "describe",
+      "it"
+    ]
+  }
 }
