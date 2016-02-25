@@ -15,6 +15,7 @@
     "babel-preset-react": "^6.5.0",
     "expect": "^1.14.0",
     "file-loader": "^0.8.5",
+    "fs-extra": "^0.26.5",
     "jsdom": "^8.0.4",
     "mocha": "^2.4.5",
     "mocha-jsdom": "^1.1.0",
@@ -26,13 +27,20 @@
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   },
+  "npm_package": {
+    "files": [
+      "src/component",
+      "README.md"
+    ]
+  },
   "scripts": {
+    "npm_package": "node ./create-npm-package",
     "build": "webpack --progress",
     "dev": "webpack-dev-server --hot --inline",
     "lint": "semistandard",
-    "nocov": "npm run lint && mocha index.test.js --compilers js:babel-register",
+    "nocov": "npm run lint && mocha ./test/component/index.test.js --compilers js:babel-register",
     "test": "npm run lint && npm run coverage",
-    "coverage": "./node_modules/.bin/babel-node ./node_modules/.bin/babel-istanbul cover ./node_modules/.bin/_mocha index.test.js --report lcovonly -- -R spec"
+    "coverage": "./node_modules/.bin/babel-node ./node_modules/.bin/babel-istanbul cover ./node_modules/.bin/_mocha ./test/component/index.test.js --report lcovonly -- -R spec"
   },
   "repository": {
     "type": "git",
