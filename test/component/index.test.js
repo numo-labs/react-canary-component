@@ -3,7 +3,7 @@ import TestUtils from 'react-addons-test-utils';
 import jsdom from 'mocha-jsdom';
 import expect from 'expect';
 
-import StarwarsQuote from './index.js';
+import StarwarsQuote from '../../src/component/index.js';
 
 function setup (propOverrides) {
   const props = Object.assign({}, propOverrides);
