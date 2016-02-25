@@ -1,7 +1,7 @@
 # react-canary-component
 
 ## How to Setup a React Webpack Babel Project
-Boilerplate for setting up a repository with minimal dependencies as a  across all projects.
+Boilerplate for setting up a repository with minimal dependencies as a standard across all projects...
 
 ## Basic
 Initialize your project by running the `$ npm init` command in the terminal.  
