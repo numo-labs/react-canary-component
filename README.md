@@ -26,6 +26,7 @@ Basic file structure:
 
 ```
 
+
 The basic setup required to build your initial bundle involves installing the following dependencies. Run this command in your command line:
 
 `$ npm i --save-dev webpack babel-core babel-loader babel-preset-react babel-preset-es2015 react react-dom file-loader`
@@ -124,6 +125,7 @@ Include this script in your `package.json` to run your tests:
 ```json
 "test": "npm run lint && mocha test/**/*.test.js --compilers js:babel-register"
 ```
+
 You'll need to add the following to the `package.json` in order to exclude our test commands from the linter:
 
 ```json

@@ -11,7 +11,6 @@ const StarwarsQuote = React.createClass({
     return (
       <div>
         {this.props.quote || starwars()}
-      </div>
     );
   }
 });
