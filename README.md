@@ -4,7 +4,7 @@
 Boilerplate for setting up a repository with minimal dependencies as a  across all projects.
 
 ## Basic
-Initialize your project by running the `$ npm init` command in the terminal.  
+Initialize your project by running the `$ npm init` command in the terminal
 
 Basic file structure:
 ```
