@@ -1,6 +1,6 @@
 {
   "name": "react-canary-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Starter kit for ES6 React components with hot loading, webpack, babel and testing",
   "main": "index.js",
   "dependencies": {
